@@ -1,0 +1,148 @@
+.q-nav {    
+    display: flex;
+    width: 50%;
+
+    img {
+      width: 140%;
+      position: relative;
+      left: -20%;
+    }
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: 15%;
+      background: #5dc172;
+      color: white;
+      border: none;
+      margin-bottom: 4px;
+      font-size: 2vw;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    max-width: 900px;
+    margin: auto;
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    font-family: Montserrat, sans-serif;
+
+    .info {
+      display: block;
+      margin: auto;
+
+      .info-form {
+        display: table;
+        margin: auto;
+
+        > div {
+          display: table-row;
+
+          div, input {
+            display: table-cell;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #737373;
+          }
+        }
+      }
+    }
+
+    .Shape {
+
+      p {
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+      }
+
+      .splash-shape {
+          display: flex;
+          justify-content: space-evenly;
+      }
+
+      .shape-active {
+        // border: 1px solid black;
+        background: #5dc172;
+        width: 25%;
+        height: 25%;
+      }
+
+      img {
+        border-radius: 10px;
+        background: #ff00008c;
+        padding: 5px;
+        width: 10%;
+        height: 10%;
+      }
+    }
+
+    .Size {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      img {
+        width: 250px;
+        margin: auto;
+        display: block;
+      }
+
+      > div {
+
+        border: 1px solid black;
+        padding: 15px;
+        margin: 10px;
+
+        >div {
+
+          display: block;
+
+
+
+          > div {
+            display: table-row;
+
+            > span {
+              text-align: right;
+            }
+
+            > span, > input {
+              display: table-cell;
+              padding: 5px;
+            }
+          }
+        }        
+      }
+    }
+
+    .Colour {
+      img {
+        width: 100px
+      }
+    }
+
+    .Extra {
+
+      p {
+        font-size: large;
+      }
+
+      input {
+        font-size: large;
+      }
+
+      textarea {
+        margin: 0px;
+        width: 100%;
+        height: 300px;
+        font-size: large;
+      }
+    }
+  }
+}
